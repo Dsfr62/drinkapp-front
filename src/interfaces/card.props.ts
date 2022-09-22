@@ -5,4 +5,6 @@ export interface CardProps {
     is_liked: boolean;
     is_saved: boolean;
     author: string;
+    min_player?: number;
+    max_player?: number;
 };

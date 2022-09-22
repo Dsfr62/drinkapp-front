@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CardProps } from "../../interfaces/card.props";
 
-const Card = ({ image, title, likes, is_liked, is_saved, author}: CardProps) => {
+const Card = ({ image, title, likes, is_liked, is_saved, author, min_player, max_player }: CardProps) => {
     const [like, setLike] = useState(is_liked);
     const [save, setSave] = useState(is_saved);
 
@@ -24,12 +24,13 @@ const Card = ({ image, title, likes, is_liked, is_saved, author}: CardProps) => 
 
     return (
         <div className="border-2 border-firstBrown border-opacity-70 rounded-sm my-4 md:mx-2 p-3 w-[100%] md:w-[65%] h-128 md:h-128 max-w-lg">
-        {image ? <img className="h-[80%] md:h-[85%] w-[100%]" src={image} alt="Image" /> : <p className="bg-firstGreen rounded-sm h-[75%] opacity-60">{title} picture</p>}
+        {image ? <img className="h-[80%] md:h-[80%] w-[100%]" src={image} alt="Image" /> : <p className="bg-firstGreen rounded-sm h-[75%] opacity-60">{title} picture</p>}
         <div className="m-2 h-[80%]">
             <div className="flex justify-between">
                 <p className="font-semibold text-lg">{title}</p>
                 <p>{likes} Likes</p>
             </div>
+            {min_player ? <p className="text-sm">Players: {min_player} - {max_player}</p> : ""}
             <div className="flex justify-between">
                 <button className={!like ? "" : "text-firstGreen"} onClick={handleLike}>{!like ? "Like" : "Liked"}</button>
                 <p className={!save ? "" : "text-firstGreen"} onClick={handleSave}>{!save ? "Save" : "Saved"}</p>

@@ -14,8 +14,8 @@ const GamesPage = () => {
                 
                 <SearchBar />
                 <div className="flex flex-col md:flex-row md:justify-between">
-                    <Card image={'./src/assets/game-images/madrid.jpg'} title="Madrid" likes={1500} is_liked={false} is_saved={false} author="Jhon Doe"/>
-                    <Card image={'./src/assets/game-images/op.jpg'} title="One Piece" likes={1000} is_liked={false} is_saved={false} author="Jhon Doe"/>
+                    <Card image={'./src/assets/game-images/madrid.jpg'} title="Madrid" likes={1500} is_liked={false} is_saved={false} author="Jhon Doe" min_player={2} max_player={6}/>
+                    <Card image={'./src/assets/game-images/op.jpg'} title="One Piece" likes={1000} is_liked={false} is_saved={false} author="Jhon Doe" min_player={11} max_player={200}/>
                 </div>
             </div>
         </div>
