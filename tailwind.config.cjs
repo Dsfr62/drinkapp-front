@@ -13,6 +13,9 @@ module.exports = {
         firstYellow: "#ddd09d",
         firstGreen: "#829a84",
         firstPink: "#bfa3a3",
+      },
+      spacing: {
+        '128': '32rem',
       }
     },
   },
