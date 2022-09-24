@@ -5,7 +5,6 @@ const EditProfileForm = () => {
     
     const { register, handleSubmit } = useForm();
     
-    //TODO: Create interface for update user 
     const onSubmit = (data: UpdateProfileInterface) => console.log(data);
 
     //Hook this info from useAuth hook.
