@@ -1,5 +1,5 @@
-import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import EditProfileForm from "../../components/edit-profile-form";
 import Navbar from "../../components/navbar"
 
 const ProfilePage = () => {
@@ -11,11 +11,7 @@ const ProfilePage = () => {
         email: "jhondoe@testmail.com",
         password: "jhon123",
         role: "Basic",
-    }
-
-    const { register, handleSubmit } = useForm();
-    //TODO: Create interface for update user 
-    const onSubmit = data => console.log(data);
+    };
 
     return (
         <div>
@@ -25,28 +21,17 @@ const ProfilePage = () => {
                 <p>Do you want to see your posts?</p>
                 <p className="p-1.5"><Link to="posts/drink">Drinks &#x1F378;</Link></p>
                 <p className="p-1.5"><Link to="posts/game">Game &#x1F3AF;</Link></p>
-                <p className="my-2">- No, I want to <span className="font-semibold">edit</span> my profile</p>
-                {/* //TODO: Put this in a component */}
-                <form className="w-[100%]" onSubmit={handleSubmit(onSubmit)}>
-                    <div>
-                        <label htmlFor="firstName" className="w-[30%]">First name</label>
-                        <input className="border-2 border-firstNuts rounded-md ml-1 my-2 w-[70%] md:w-[20%]" defaultValue={user.firstName} {...register("firstName")} />
-                    </div>
-                    <div>
-                        <label htmlFor="lastName" className="w-[30%]">Last name</label>
-                        <input className="border-2 border-firstNuts rounded-md ml-1 my-2 w-[70%] md:w-[20%]" defaultValue={user.lastName} {...register("lastName")} />
-                    </div>
-                    <div>
-                        <label htmlFor="email" className="w-[20%]">Email</label>
-                        <input className="border-2 border-firstNuts rounded-md ml-1 my-2 w-[81%] md:w-[23.5%]" defaultValue={user.email} {...register("email")} />
-                    </div>
-                    <div>
-                        <label htmlFor="password" className="w-[20%]">Password</label>
-                        <input className="border-2 border-firstNuts rounded-md ml-1 my-2 w-[72%] md:w-[20.5%]" defaultValue={user.password} {...register("password")} />
-                    </div>
-                    <button type="submit" className="bg-firstBrown text-white rounded-md p-1 font-semibold my-2 w-[100%] md:w-[27.5%]">Update</button>
-                </form>
+
+                <p className="mt-2">Or do you want to see your saved posts?</p>
+                <p>Yes? <span className="font-semibold"><Link to="posts/saved">Click here!</Link></span></p>
+                
+                {/* Later, we will have the users badges here. */}
+
+                <p className="mt-6 mb-2">- No, I want to <span className="font-semibold">edit</span> my profile</p>
+                <EditProfileForm />
             </div>
+
+            {/* For pc users, profile page will have a roulette beside this div, for mobile users, it's going to be a click for a page*/}
         </div>
     );
 };
