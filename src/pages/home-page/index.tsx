@@ -1,8 +1,13 @@
 import Navbar from "../../components/navbar";
 import { Link } from "react-router-dom";
 import Ranking from "../../components/ranking";
+import data from "../../api/rankedsList.json";
 
 const HomePage = () => {
+
+    const drinkRank = data.drinkRankeds;
+    const gameRank = data.gameRankeds;
+
     return (
         <div>
             <Navbar />
@@ -13,7 +18,8 @@ const HomePage = () => {
                 <p className="cursor-pointer rounded-md w-fit p-1.5 ease-linear transition-all mt-1 hover:rounded-md hover:bg-firstGreen hover:font-semibold hover:text-white"><Link to="games">Games &#x1F3AF;</Link></p>
             </div>
             <div className="p-6">
-                <Ranking />
+                <Ranking rankeds={drinkRank}/>
+                <Ranking rankeds={gameRank}/>
             </div>
         </div>
     );

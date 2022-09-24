@@ -1,0 +1,38 @@
+{
+    "drinkRankeds": [{
+        "title": "Mojito",
+        "likes": 10000,
+        "postedBy": "Jhon Doe",
+        "postLink": "/jhonDoe/posts/mojito"
+    },
+    {
+        "title": "Tropical Gin",
+        "likes": 4000,
+        "postedBy": "Jhon Doe",
+        "postLink": "/jhonDoe/posts/tropicalgin"
+    },
+    {
+        "title": "Caipiroska",
+        "likes": 1500,
+        "postedBy": "Jhon Doe",
+        "postLink": "/jhonDoe/posts/caipiroska"
+    }],
+    "gameRankeds": [{
+        "title": "Beer pong",
+        "likes": 12000,
+        "postedBy": "Jhon Doe",
+        "postLink": "/jhonDoe/posts/beerpong"
+    },
+    {
+        "title": "Uno",
+        "likes": 4000,
+        "postedBy": "Jhon Doe",
+        "postLink": "/jhonDoe/posts/uno"
+    },
+    {
+        "title": "Truth or dare",
+        "likes": 100,
+        "postedBy": "Jhon Doe",
+        "postLink": "/jhonDoe/posts/truthordare"
+    }]
+}
