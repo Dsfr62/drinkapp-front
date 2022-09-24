@@ -1,11 +1,12 @@
 import { useForm } from "react-hook-form";
+import { UpdateProfileInterface } from "../../interfaces/update-profile.interface";
 
 const EditProfileForm = () => {
     
     const { register, handleSubmit } = useForm();
     
     //TODO: Create interface for update user 
-    const onSubmit = (data: any) => console.log(data);
+    const onSubmit = (data: UpdateProfileInterface) => console.log(data);
 
     //Hook this info from useAuth hook.
     const user = {
