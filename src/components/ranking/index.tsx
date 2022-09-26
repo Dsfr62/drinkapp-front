@@ -1,5 +1,4 @@
 
-// TODO: Figure out how can I organize the ranking block 
 // TODO: Figure out how can I fragment each post in the ranking
 // TODO: Style each info to the click
 
@@ -23,7 +22,7 @@ const Ranking = ({ rankeds }:RankingProps) => {
                     </div>
 
                     {rankedsList.map((ranked: RankedProps) => (
-                        <Ranked title={ranked.title} likes={ranked.likes} postedBy={ranked.postedBy} postLink={ranked.postLink}/>
+                        <Ranked title={ranked.title} likes={ranked.likes} postedBy={ranked.postedBy} postLink={ranked.postLink} key={ranked.postId} postId={ranked.postId}/>
                     ))}
                 </div>
             </div>

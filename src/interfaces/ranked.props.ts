@@ -3,4 +3,5 @@ export interface RankedProps {
     likes: number;
     postedBy: string;
     postLink: string;
+    postId?: string;
 };

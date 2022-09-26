@@ -3,36 +3,42 @@
         "title": "Mojito",
         "likes": 10000,
         "postedBy": "Jhon Doe",
-        "postLink": "/jhonDoe/posts/mojito"
+        "postLink": "/jhonDoe/posts/mojito",
+        "postId": "4aa9fb7c-8a96-41fc-8abd-757434aace86"
     },
     {
         "title": "Tropical Gin",
         "likes": 4000,
         "postedBy": "Jhon Doe",
-        "postLink": "/jhonDoe/posts/tropicalgin"
+        "postLink": "/jhonDoe/posts/tropicalgin",
+        "postId": "3f1a48f5-e4b9-47c9-b4af-28a38d715acb"
     },
     {
         "title": "Caipiroska",
         "likes": 1500,
         "postedBy": "Jhon Doe",
-        "postLink": "/jhonDoe/posts/caipiroska"
+        "postLink": "/jhonDoe/posts/caipiroska",
+        "postId": "4a2b8572-bf05-414e-bc29-f394353924c5"
     }],
     "gameRankeds": [{
         "title": "Beer pong",
         "likes": 12000,
         "postedBy": "Jhon Doe",
-        "postLink": "/jhonDoe/posts/beerpong"
+        "postLink": "/jhonDoe/posts/beerpong",
+        "postId": "8fdf2afc-215c-43a5-ab31-81817a940960"
     },
     {
         "title": "Uno",
         "likes": 4000,
         "postedBy": "Jhon Doe",
-        "postLink": "/jhonDoe/posts/uno"
+        "postLink": "/jhonDoe/posts/uno",
+        "postId": "663729e9-d17a-4484-897c-c28b15820246"
     },
     {
         "title": "Truth or dare",
         "likes": 100,
         "postedBy": "Jhon Doe",
-        "postLink": "/jhonDoe/posts/truthordare"
+        "postLink": "/jhonDoe/posts/truthordare",
+        "postId": "d7b47505-a781-4e8c-a0b2-71b5c006ee73"
     }]
 }
